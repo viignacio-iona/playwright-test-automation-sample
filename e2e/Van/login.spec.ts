@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Login Flow', () => {
-  test.describe('Login tests', () => {
+  test.describe('Login flow end-to-end tests', () => {
     test.beforeEach(async ({ page }) => {
       await page.goto('/');
     });
@@ -127,4 +126,3 @@ test.describe('Login Flow', () => {
       await expect(page).toHaveURL(/#/);
     });
   });
-});
